@@ -13,6 +13,9 @@ window.onscroll = function() {
   }
 
 }
+function myFunction(x) {
+  x.classList.toggle("change");
+}
 
 // Side NavIgation Menu JS Code
 let body = document.querySelector("body");
