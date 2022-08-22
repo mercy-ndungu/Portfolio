@@ -14,44 +14,40 @@
   <div class="scroll-button">
     <a href="#home"><i class="fas fa-arrow-up"></i></a>
   </div> 
-  <!-- menu overlay -->
-  <div class="overlay" id="overlay">
-    <nav>
-      <ul>
-        <li id="nav1"><a href=""></a>Home</li>
-        <li id="nav2"><a href="">About</a></li>
-        <li id="nav3"><a href="">Skills</a></li>
-        <li id="nav4"><a href="">Projects</a></li>
-        <li id="nav5"></li>
-      </ul>
-    </nav>
+ 
+  <div class="switch-wrapper">
+  </a>
+  <div class="sun"></div>
+  <div class="toggle-wrapper">
+      <input type="checkbox" id="switch"  />
+      <label for="switch" id="switch1" >Toggle</label>
   </div>
-  <!-- navgaition menu -->
+  <div class="moon"></div>
+</div>
+ 
   <nav>
     <div class="navbar">
       <div class="logo"><a href="#">Portfolio.</a></div>
-      <div class="container"  id="menu-bars" onclick="myFunction(this)" >
-<div class="bar1"></div>
-<div class="bar2"></div>
-<div class="bar3"></div>
-      </div>
-      <div>
-        <div class="switch-wrapper">
-        </a>
-        <div class="sun"></div>
-        <div class="toggle-wrapper">
-            <input type="checkbox" id="switch"  />
-            <label for="switch" id="switch1" >Toggle</label>
-        </div>
-        <div class="moon"></div>
-    </div>
-      </div>
-      
+      <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+      </ul>
+     
     </div>
     <div class="menu-btn">
       <i class="fas fa-bars"></i>
+      
     </div>
+    
+   
   </nav>
+ 
 
 <!-- Home Section Start -->
  <section class="home" id="home">
@@ -63,13 +59,14 @@
      
      </div>
      <div class="button">
-       <button>Check my Resume</button>
+       <!-- <button>Check my Resume <iframe src="" width="100%" height="500px">
+      </iframe></button> -->
      </div>
    </div>
    <div class="media-icons">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="https://github.com/mercy-ndungu?tab=repositories"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i class="fab fa-linkedin"></i></a>
+    <a href="https://twitter.com/KirigoNdungu"><i class="fab fa-twitter"></i></a>
   </div>
  </section>
  
@@ -80,14 +77,16 @@
     <div class="title"><span>About Me</span></div>
   <div class="about-details">
     <div class="left">
-      <img src="images/about.jpg" alt="">
+      <img src="/images/headshot.jpg" alt="">
     </div>
     <div class="right">
-      <div class="topic">Designing Is My Passion</div>
+      <div class="topic"></div>
       <p>After spending some time in the creative arts, I became interested in technology and realized that, like art, technology is a creation with an intent toward completion and wholeness. I started by studying on my own and working on design, backend, and frontend development projects. I've worked on a team to develop apps using Kotlin and JavaScript webpages. I'm excited to put my expertise in full-stack web development to use.</p>
+  
       <div class="button">
-        <button>Download CV</button>
-      </div>
+       <Button><a href="/Mercy's Resume.pdf" className="btn btn-outline" download>Download Resume
+      </a></Button> 
+    </div>
     </div>
   </div>
   </div>
@@ -99,32 +98,31 @@
  <div class="content">
    <div class="title"><span>My Skills</span></div>
    <div class="skills-details">
+    
      <div class="text">
-       <div class="topic">Skills  That Reflects My Knowledge</div>
-       <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus natus tenetur tempora? Quasi, rem quas omnis. Porro rem aspernatur reiciendis ut praesentium minima ad, quos, officia! Illo libero, et, distinctio repellat sed nesciunt est modi quaerat placeat. Quod molestiae, alias?</p>
-       <div class="experience">
-         <!-- <div class="num">10</div> -->
-         <!-- <div class="exp">Years Of <br> Experience</div> -->
-       </div>
+       
+     
+        <div class="rings">
+          <ul class="ratings">
+              
+        <li></li><p class="p-list">JavaScript with React</p>
+     
+        <li></li><p class="p-list">Python with Django</p>
+      
+        <li></li> <p class="p-list">Mobile development with Kotlin</p>
+
+        <li></li><p class="p-list">UX Research</p>
+          </ul>
+
+        </div>
+        
+      
+        
+   
+   
      </div>
-     <div class="boxes">
-       <div class="box">
-         <div class="topic">HTML/CSS with JavaScript</div>
-         <div class="per">90%</div>
-       </div>
-       <div class="box">
-         <div class="topic">Kotlin</div>
-         <div class="per">80%</div>
-       </div>
-       <div class="box">
-         <div class="topic">Python with Django</div>
-         <div class="per">70%</div>
-       </div>
-       <div class="box">
-         <div class="topic">UX Research</div>
-         <div class="per">60%</div>
-       </div>
-     </div>
+    
+     
    </div>
  </div>
 </section>
@@ -136,46 +134,26 @@
      <div class="boxes">
        <div class="box">
          <div class="icon">
-           <i class="fas fa-chart-line"></i>
+           <!-- <i class="fas fa-chart-line"></i> -->
        </div>
-       <div class="topic">Finacial Tracker</div>
+       <div class="topic"> <a href="https://github.com/mercy-ndungu/Financial-Tracking-App..git">Finacial Tracker</a> </div>
        
      </div>
        <div class="box">
          <div class="icon">
-            <i class="fa fa-h-square" ></i>
+            <!-- <i class="fa fa-h-square" ></i> -->
        </div>
-       <div class="topic">Hospital Management System</div>
+       <div class="topic"><a href="https://github.com/mercy-ndungu/Blog-post-with-Fast-API..git">Blog post.</a></div>
        
      </div>
        <div class="box">
          <div class="icon">
-           <i class="fas fa-shopping-bag"></i>
+           <!-- <i class="fas fa-shopping-bag"></i> -->
        </div>
-       <div class="topic">E-Commerce</div>
+       <div class="topic"><a href="">Weather app</a></div>
        
      </div>
-       <div class="box">
-         <div class="icon">
-           <i class="fab fa-android"></i>
-       </div>
-       <div class="topic">Text Automation Programme</div>
-       
-     </div>
-       <div class="box">
-         <div class="icon">
-           <i class="fas fa-camera-retro"></i>
-       </div>
-       <div class="topic">Instagram Clone</div>
-       
-     </div>
-       <div class="box">
-         <div class="icon">
-           <i class="fas fa-bolt"></i>
-       </div>
-       <div class="topic">Weather App</div>
-       
-     </div>
+      
    </div>
    </div>
  </section>
@@ -188,7 +166,8 @@
       <div class="topic">Have Any Project?</div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam neque ipsum corrupti dolores, facere numquam voluptate aspernatur sit perferendis qui nisi modi! Recusandae deserunt consequatur voluptatibus alias repellendus nobis eligendi.</p>
       <div class="button">
-        <button>Let's Talk</button>
+        <button> <a href = "mailto:mercyndungukirigo@gmail.com">Let's Talk </a></button>
+        <!-- <a href = "mailto:name@gmail.com">Let's Talk </a> -->
       </div>
     </div>
   </div>
@@ -196,10 +175,7 @@
 
 <!-- Footer Section Start -->
 <footer>
-  <div class="text">
-    <span>Created By <a href="#">Mercy Kirigo</a>  </span>
-  </div>
-</footer>
+
 
   <script src="script.js"></script>
 </body>

@@ -13,9 +13,9 @@ window.onscroll = function() {
   }
 
 }
-function myFunction(x) {
-  x.classList.toggle("change");
-}
+// function myFunction(x) {
+//   x.classList.toggle("change");
+// }
 
 // Side NavIgation Menu JS Code
 let body = document.querySelector("body");
@@ -46,3 +46,29 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
+
+// $('#switch1').on('click', function(){
+//   $('body').toggleClass('night')
+// })
+// // If user visit after 7 pm in night the body will change the style to night class
+// $(document).ready(function(){
+//   var date = new Date();
+//   var current_time = date.getHours();
+//   if (current_time > 19 || current_time < 6)
+//     // If time is after 7PM or before 6AM, apply night theme to ‘body’
+//     document.body.className = "night";
+//   else
+//     // Else use ‘day’ theme
+//     document.body.className = "";
+// });
+// $(window).load(function() {
+//       $("#top-button").hide();
+// });
+// function Buttontoggle()
+// {
+//   var t = document.getElementById("123");
+//   if(t.innerHTML=="Some Text"){
+//       t.innerHTML="Toggled Text";}
+//   else{
+//       t.innerHTML="Some Text";}
+// }
